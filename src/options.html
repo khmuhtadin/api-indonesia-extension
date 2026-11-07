@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>Pengaturan - Libur &amp; Sholat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="options">
+  <main>
+    <h1><img src="icons/icon48.png" alt="" width="32" height="32"> Libur &amp; Sholat: Pengaturan</h1>
+    <p class="muted">Ekstensi ini memakai API key API Indonesia milikmu sendiri. Belum punya? Daftar gratis dan buat key di
+      <a href="https://dashboard.apiindonesia.id" target="_blank" rel="noopener">dashboard.apiindonesia.id</a>.
+      Setiap request yang berhasil memakai 2 kredit. Data disimpan sehari di browser supaya tidak boros kredit.</p>
+
+    <label for="apiKey">API key</label>
+    <div class="inline">
+      <input id="apiKey" type="password" autocomplete="off" spellcheck="false" placeholder="aip_live_...">
+      <button id="saveKey">Simpan &amp; cek</button>
+    </div>
+    <p id="keyStatus" class="small"></p>
+
+    <div id="citySection" hidden>
+      <label for="citySearch">Kabupaten/kota untuk jadwal sholat</label>
+      <input id="citySearch" type="search" placeholder="Ketik nama kota, mis. Pontianak" autocomplete="off">
+      <select id="citySelect" size="8"></select>
+      <p id="cityStatus" class="small"></p>
+    </div>
+
+    <p class="small muted">Key disimpan hanya di penyimpanan lokal browser (storage.local) dan hanya dikirim ke use.apiindonesia.id.
+      <a href="https://apiindonesia.id/privacy/" target="_blank" rel="noopener">Kebijakan privasi</a>.</p>
+  </main>
+  <script src="api.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

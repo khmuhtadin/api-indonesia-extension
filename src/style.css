@@ -1,0 +1,39 @@
+:root { --red: #c8102e; --fg: #1d1d1f; --muted: #6b6b70; --bg: #fff; --line: #e6e6ea; --soft: #f6f6f8; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--fg); background: var(--bg); }
+a { color: var(--red); }
+.muted { color: var(--muted); }
+.small { font-size: 12px; }
+.error { color: #b00020; }
+.ok { color: #1b7f3a; }
+button { font: inherit; padding: 6px 12px; border: 1px solid var(--red); background: var(--red); color: #fff; border-radius: 6px; cursor: pointer; }
+button.link { background: none; border: none; color: var(--red); padding: 0; font-size: 12px; }
+
+.popup { width: 360px; padding: 12px 14px; }
+.popup header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.popup header h1 { font-size: 16px; margin: 0; flex: 1; }
+.popup h2 { font-size: 13px; margin: 12px 0 6px; }
+.notice { background: var(--soft); border-radius: 8px; padding: 10px 12px; }
+.notice p { margin: 0 0 8px; }
+table.times { width: 100%; border-collapse: collapse; }
+table.times td { padding: 3px 6px; border-bottom: 1px solid var(--line); }
+table.times td.num { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+table.times tr.next td { background: #fdecef; color: var(--red); }
+#holidayList { list-style: none; margin: 0; padding: 0; }
+#holidayList li { padding: 6px 0; border-bottom: 1px solid var(--line); }
+#holidayList .row { display: flex; justify-content: space-between; }
+#holidayList .date { font-weight: 600; }
+#holidayList .name { margin: 2px 0; }
+.tag { display: inline-block; font-size: 11px; padding: 0 6px; border-radius: 10px; background: var(--soft); color: var(--muted); }
+.tag.cuti_bersama { background: #fff4e0; color: #8a5a00; }
+.tag.nasional { background: #fdecef; color: var(--red); }
+.tag.keagamaan { background: #e8f3ff; color: #1856a8; }
+.popup footer { margin-top: 10px; font-size: 11px; color: var(--muted); }
+
+.options main { max-width: 640px; margin: 32px auto; padding: 0 20px; }
+.options h1 { font-size: 20px; display: flex; align-items: center; gap: 10px; }
+.options label { display: block; font-weight: 600; margin: 18px 0 6px; }
+.options input { font: inherit; padding: 7px 10px; border: 1px solid var(--line); border-radius: 6px; width: 100%; }
+.options .inline { display: flex; gap: 8px; }
+.options select { width: 100%; margin-top: 8px; font: inherit; border: 1px solid var(--line); border-radius: 6px; }
+button { white-space: nowrap; }

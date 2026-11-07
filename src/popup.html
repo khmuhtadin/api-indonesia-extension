@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>Libur &amp; Sholat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="popup">
+  <header>
+    <img src="icons/icon32.png" alt="" width="20" height="20">
+    <h1>Libur &amp; Sholat</h1>
+    <button id="settings" class="link" title="Pengaturan">Pengaturan</button>
+  </header>
+
+  <div id="setup" class="notice" hidden>
+    <p>Masukkan API key API Indonesia kamu dulu di halaman pengaturan.</p>
+    <p><a href="https://dashboard.apiindonesia.id" target="_blank" rel="noopener">Ambil key di dashboard.apiindonesia.id</a></p>
+    <button id="openOptions">Buka pengaturan</button>
+  </div>
+
+  <section id="prayer" hidden>
+    <h2>Jadwal sholat hari ini <span id="city" class="muted"></span></h2>
+    <div id="prayerBody" class="muted">Memuat...</div>
+  </section>
+
+  <section id="holidays" hidden>
+    <h2>Libur &amp; cuti bersama berikutnya</h2>
+    <ul id="holidayList" class="muted"><li>Memuat...</li></ul>
+  </section>
+
+  <footer>Data: <a href="https://apiindonesia.id" target="_blank" rel="noopener">API Indonesia</a></footer>
+  <script src="api.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
