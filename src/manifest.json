@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "API Indonesia: Libur & Sholat",
-  "short_name": "Libur & Sholat",
+  "short_name": "Libur Sholat",
   "version": "1.0.0",
   "description": "Upcoming Indonesian public holidays, cuti bersama and today's prayer times for your city, using your own API Indonesia key.",
   "homepage_url": "https://apiindonesia.id",
